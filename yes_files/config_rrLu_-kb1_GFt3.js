@@ -1,0 +1,7 @@
+(function() {
+  window._POSTHOG_REMOTE_CONFIG = window._POSTHOG_REMOTE_CONFIG || {};
+  window._POSTHOG_REMOTE_CONFIG['phc_IK0pcjaSYSKs4lg9tW5quspJTJNWIG8X5iTeX25ONSm'] = {
+    config: {"analytics":{"endpoint":"/i/v0/e/"},"autocaptureExceptions":true,"autocapture_opt_out":false,"captureDeadClicks":false,"capturePerformance":{"network_timing":true,"web_vitals":true,"web_vitals_allowed_metrics":null},"conversations":false,"defaultIdentifiedOnly":true,"elementsChainAsString":true,"errorTracking":{"autocaptureExceptions":true,"suppressionRules":[]},"hasFeatureFlags":false,"heatmaps":false,"logs":{"captureConsoleLogs":false},"productTours":false,"sdkVersion":{"requested":"1"},"sessionRecording":{"canvasFps":3,"canvasQuality":"0.4","consoleLogRecordingEnabled":true,"endpoint":"/s/","eventTriggers":[],"linkedFlag":null,"masking":null,"minimumDurationMilliseconds":30000,"networkPayloadCapture":null,"recordCanvas":true,"recorderVersion":"v2","sampleRate":"0.25","scriptConfig":{"script":"posthog-recorder"},"triggerGroups":[{"conditions":{"events":[{"name":"ce_automation_form_v2"}],"matchType":"any"},"id":"9b9aebe9-e4ea-46a1-b290-09d91e3d908a","minDurationMs":30000,"name":"DTrader Automation Form","sampleRate":0.1}],"triggerMatchType":null,"urlBlocklist":[],"urlTriggers":[],"version":2},"supportedCompression":["gzip","gzip-js"],"surveys":false,"token":"phc_IK0pcjaSYSKs4lg9tW5quspJTJNWIG8X5iTeX25ONSm"},
+    siteApps: []
+  }
+})();
